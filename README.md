@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+## Dribbble - A Community for Designers (React.js App with Tailwind CSS)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a functional web application inspired by Dribbble, a popular platform for showcasing design work. It allows users to:
 
-## Available Scripts
+* **Create accounts and profiles**
+* **Upload design shots** (images and short descriptions)
+* **Like and comment on other users' shots**
+* **Follow other users**
 
-In the project directory, you can run:
+**Technologies Used:**
 
-### `npm start`
+* **Frontend:** React.js with Tailwind CSS
+* **Backend:** Express.js
+* **Database:** Firebase
+* **Image Storage:** Cloudinary
+* **Email Verification:** Resend (**Note: Currently Disabled**)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Project Setup:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone this repository.
+2. Install dependencies:
 
-### `npm test`
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Create a Tailwind configuration file (`tailwind.config.js`) and customize it according to your preferences.
 
-### `npm run build`
+4. Create a Firebase project and configure the following environment variables in your `.env` file:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+REACT_APP_FIREBASE_API_KEY=YOUR_API_KEY
+REACT_APP_FIREBASE_AUTH_DOMAIN=YOUR_AUTH_DOMAIN
+REACT_APP_FIREBASE_PROJECT_ID=YOUR_PROJECT_ID
+REACT_APP_FIREBASE_STORAGE_BUCKET=YOUR_STORAGE_BUCKET
+REACT_APP_CLOUDINARY_CLOUD_NAME=YOUR_CLOUDINARY_CLOUD_NAME
+REACT_APP_CLOUDINARY_PRESET=YOUR_CLOUDINARY_PRESET
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Note:** Email verification functionality is currently disabled due to the lack of a custom domain for the application. To enable email verification, you will need to configure a custom domain with Firebase Authentication.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Screenshot:**
+![Screenshot 2024-04-10 190405](https://github.com/real-varshney/dribbble_clone/assets/109132583/acb76d41-d947-4f69-b259-3345461b0e20)
+![Screenshot 2024-04-10 190434](https://github.com/real-varshney/dribbble_clone/assets/109132583/34859e36-8213-4dd2-bd39-e67f9fd17933)
+![Screenshot 2024-04-10 190455](https://github.com/real-varshney/dribbble_clone/assets/109132583/7fc8cff9-ec0c-4052-91fe-0065e99cd087)
+![Screenshot 2024-04-10 190523](https://github.com/real-varshney/dribbble_clone/assets/109132583/15903499-e0e2-4cc2-8e33-f70f476a72bb)
+![Screenshot 2024-04-10 190600](https://github.com/real-varshney/dribbble_clone/assets/109132583/1006363e-0caf-4e5f-a0c3-89076f4736e4)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Running the Application:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. The application will be accessible at `http://localhost:3000`.
 
-## Learn More
+**Additional Notes:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Tailwind CSS classes are already integrated throughout the codebase. Feel free to customize the styling further according to your design preferences.
+* Extend the functionality by adding features like collections, categories, search, etc.
+* Refer to the official documentation for each technology used for detailed usage and configuration.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Disclaimer:**
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is for educational purposes only and is not affiliated with the official Dribbble platform.
